@@ -39,18 +39,18 @@ a{color:inherit;text-decoration:none}
 .link small{display:block;color:var(--muted);font-size:.875rem;margin-top:2px}
 .link .go{flex:none;width:18px;height:18px;color:var(--muted);transition:color .15s,transform .15s}
 .link:hover .go{color:var(--accent);transform:translateX(2px)}
-.contact{display:flex;align-items:stretch;gap:24px;padding:22px;margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:14px}
-.contact-text{flex:1;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
-.contact-text small{display:block;color:var(--muted);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
-.contact-text b{display:block;font-size:1.25rem;line-height:1.3;font-weight:600;margin-top:8px}
-.save{display:inline-flex;align-items:center;gap:10px;margin-top:auto;padding:12px 20px;border-radius:12px;background:var(--accent);color:var(--bg);font-weight:600;transition:filter .15s,transform .15s}
+.contact{display:flex;align-items:center;gap:20px;padding:18px;margin-bottom:12px;background:var(--card);border:1px solid var(--line);border-radius:14px}
+.contact-text{flex:1;min-width:0;text-align:center}
+.contact-text small{display:block;padding-left:.12em;color:var(--muted);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
+.contact-text b{display:block;font-weight:600;margin:4px 0 14px}
+.save{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;background:var(--accent);color:var(--bg);font-weight:600;transition:filter .15s,transform .15s}
 .save svg{width:18px;height:18px}
 .save:hover,.save:focus-visible{filter:brightness(1.1);transform:translateY(-1px)}
 .save:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.qr{flex:none;width:148px;margin:0}
-.qr img{display:block;width:148px;height:148px;padding:10px;background:#fff;border-radius:12px;image-rendering:pixelated}
-.qr figcaption{margin-top:10px;color:var(--muted);font-size:.625rem;letter-spacing:.08em;text-transform:uppercase;text-align:center;white-space:nowrap}
-@media (max-width:460px){.contact{flex-direction:column;align-items:center;gap:20px}.contact-text{align-items:center;text-align:center}.contact-text b{margin-bottom:16px}.qr{width:168px}.qr img{width:168px;height:168px}}
+.qr{flex:none;margin:0;display:flex;flex-direction:column;align-items:center}
+.qr img{display:block;width:132px;height:132px;padding:10px;background:#fff;border-radius:12px;image-rendering:pixelated}
+.qr figcaption{margin-top:8px;padding-left:.12em;color:var(--muted);font-size:.6875rem;letter-spacing:.12em;text-transform:uppercase}
+@media (max-width:420px){.contact{flex-direction:column;text-align:center}.qr img{width:168px;height:168px}}
 footer{margin-top:auto;padding-top:48px;color:var(--muted);font-size:.8125rem}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -70,7 +70,7 @@ footer{margin-top:auto;padding-top:48px;color:var(--muted);font-size:.8125rem}
       <a class="save" href="contact.vcf" download="Ivan Kuleshov.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Save contact</a>
     </div>
     <figure class="qr">
-      <img src="img/qr.svg" width="148" height="148" alt="QR code with Ivan Kuleshov's contact card">
+      <img src="img/qr.svg" width="132" height="132" alt="QR code with Ivan Kuleshov's contact card">
       <figcaption>Scan to save contact</figcaption>
     </figure>
   </section>
